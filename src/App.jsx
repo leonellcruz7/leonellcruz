@@ -118,21 +118,21 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div ref={home}>
+      <div ref={home}>
         <Landing />
       </div>
       <div ref={about} >
         <About />
-      </div> */}
-      {/* <div ref={work} >
+      </div>
+      <div ref={work} >
         <Work />
-      </div> */}
+      </div>
       <div ref={things} >
         <Things />
       </div>
-      {/* <div ref={contact}>
+      <div ref={contact}>
         <Contact />
-      </div> */}
+      </div>
 
     </div>
   );
