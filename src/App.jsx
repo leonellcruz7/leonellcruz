@@ -66,7 +66,7 @@ function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: .7 }}>
-              <h4>Logo</h4>
+              <img src={require('./img/leologo.png')} />
             </motion.div>
             <div className="col6 desktoplist list">
               <ul>
