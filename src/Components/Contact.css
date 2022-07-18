@@ -1,0 +1,70 @@
+.contact {
+    padding: 20px 0;
+    background-color: aliceblue;
+}
+
+.contact .divider {
+    margin: 50px 0;
+    background-color: rgb(187, 187, 187);
+}
+
+.contact .row {
+    justify-content: center;
+}
+
+.contact .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
+}
+
+.contact .mail {
+    display: flex;
+    align-items: center;
+}
+
+.contact .mail .maillogo {
+    font-size: 25px;
+    margin: 20px 10px;
+}
+
+.contact .content h2 {
+    margin: 20px 0;
+}
+
+.contact input {
+    padding: 8px 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.contact .input {
+    margin: 10px 0;
+}
+
+.contact textarea {
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    max-width: 530px;
+}
+
+.contact .inputIcon {
+    position: absolute;
+    transform: translateY(9px) translateX(5px);
+    font-size: 15px;
+}
+
+.contact .nIcon {
+    font-size: 15px;
+}
+
+.contact .eIcon {
+    font-size: 17px;
+}

@@ -1,0 +1,249 @@
+.things {
+    padding: 40px 0;
+
+}
+
+.things .smCon {
+    width: 100px;
+
+}
+
+.things .col1 {
+    flex-basis: 100%;
+
+}
+
+.things .logo {
+    width: 125px;
+    padding-top: 10px;
+
+}
+
+.things .zuitt {
+    width: 125px;
+    padding: 18px;
+}
+
+
+
+.things .smCon {
+    width: 50%;
+
+}
+
+.things .head {
+    display: flex;
+    align-items: center;
+}
+
+.things .head .divider {
+    width: 40%;
+}
+
+.things .head h2 {
+    margin: 0 20px;
+}
+
+.things .image {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+.things .image .content {
+    overflow: hidden;
+    text-align: center;
+    max-height: 300px;
+    background-color: rgb(224, 236, 243);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+
+}
+
+.things .image .content p {
+    font-size: 12px;
+    color: rgb(108, 120, 139);
+}
+
+.things .image2 .content p {
+    font-size: 12px;
+    color: rgb(108, 120, 139);
+}
+
+
+.things .image h2 {
+    margin: 20px 0;
+    font-size: 17px;
+    color: #2d3747;
+}
+
+.things .image2 h2 {
+    margin: 20px 0;
+    font-size: 17px;
+    color: #2d3747;
+}
+
+.things .information {
+    background-color: transparent;
+    margin: 20px 0;
+    transform: translateX(-100px);
+    padding: 40px 0;
+
+
+
+}
+
+.things .information h3 {
+    color: #2d3747;
+}
+
+.things .information p {
+    color: rgb(108, 120, 139);
+}
+
+.things .information .tools li {
+    color: rgb(108, 120, 139);
+}
+
+.things .information2 h3 {
+    color: #2d3747;
+}
+
+.things .information2 p {
+    color: rgb(108, 120, 139);
+}
+
+.things .information2 .tools2 li {
+    color: rgb(108, 120, 139);
+}
+
+.things .information .content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.things .information .box {
+    padding: 20px;
+    background-color: #109473;
+    text-align: end;
+    border-radius: 4px;
+    border: none;
+    margin: 20px 0;
+    box-shadow: -5px 4px 9px -3px rgba(0, 0, 0, 0.63);
+
+}
+
+.things .information .box p {
+    color: rgb(202, 208, 218);
+    font-size: 12px;
+}
+
+.things .information .tools {
+    display: flex;
+
+}
+
+.things .information .tools li {
+    margin: 0 10px;
+
+    font-size: 13px;
+}
+
+.things .information .icons {
+    display: flex;
+    align-items: center;
+}
+
+.things .git {
+    font-size: 22px;
+    margin: 10px 5px;
+}
+
+
+
+
+
+
+
+.things .image2 {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+.things .image2 .content {
+    overflow: hidden;
+    text-align: center;
+    max-height: 300px;
+    background-color: rgb(224, 236, 243);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+
+}
+
+.things .image2 img {}
+
+.things .image2 h2 {
+    margin: 20px 0;
+}
+
+.things .information2 {
+    background-color: transparent;
+    margin: 20px 0;
+    transform: translateX(100px);
+    position: relative;
+    z-index: 1;
+    padding: 40px 0;
+
+
+
+}
+
+.things .information2 .content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.things .information2 .box2 {
+    padding: 20px;
+    text-align: start;
+    border-radius: 4px;
+    border: none;
+    margin: 20px 0;
+    box-shadow: -5px 4px 9px -3px rgba(0, 0, 0, 0.63);
+    background-color: #109473;
+}
+
+.things .information2 .box2 p {
+    color: rgb(202, 208, 218);
+    font-size: 12px;
+}
+
+.things .information2 .tools2 {
+    display: flex;
+}
+
+.things .information2 .tools2 li {
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.things .secondrow {
+    margin: 40px 0;
+}
+
+@media only screen and (max-width:1630px) {
+    .things .smCon {
+        width: 60%;
+    }
+}

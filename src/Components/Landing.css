@@ -1,0 +1,69 @@
+.landing {
+    padding: 25vh 0;
+}
+
+.landing .row {
+    justify-content: center;
+
+}
+
+.landing .col2 {
+    flex-basis: 65%;
+}
+
+.landing .text {
+
+    padding: 10px 300px 10px 0;
+    font-size: 13px;
+}
+
+.landing .hi {
+    color: #109473;
+    padding: 10px 0;
+    font-family: 'PT Mono', monospace;
+    font-size: 13px;
+
+}
+
+.landing .sub {
+    color: rgb(108, 120, 139);
+}
+
+.landing .text p {
+    color: rgb(108, 120, 139);
+}
+
+.landing .head {
+    line-height: 70px;
+}
+
+.landing .head .name {
+    color: #2d3747;
+}
+
+.landing button {
+    margin: 20px 0;
+    color: #109473;
+}
+
+@media only screen and (max-width:1400px) {
+    .landing .text {
+
+        padding: 10px 50px 10px 0;
+        font-size: 13px;
+    }
+
+    .landing .col2 {
+        flex-basis: 80%;
+    }
+
+    .landing .mdCon {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:1040px) {
+    .landing .mdCon {
+        width: 100%;
+    }
+}
