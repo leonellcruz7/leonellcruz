@@ -3,6 +3,13 @@ import './Landing.css'
 import { motion } from 'framer-motion'
 
 export default function Landing() {
+    function viewresume() {
+        window.open(
+            'https://drive.google.com/file/d/1bDEYr-4BagnZkcrQwfyofNmSb-T19SZH/view?usp=sharing',
+            '_blank'
+        )
+    }
+
     return (
         <div className="landing">
             <div className="mdCon">
@@ -31,6 +38,7 @@ export default function Landing() {
                             </div>
                             <div className="btn">
                                 <motion.button
+                                    onClick={viewresume}
                                     initial={{ y: 50, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ type: 'spring', duration: 1, delay: 1.1 }}>Learn More</motion.button>

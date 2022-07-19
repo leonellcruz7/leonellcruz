@@ -11,6 +11,7 @@ import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { RiMenu5Fill } from 'react-icons/ri'
 import { GrFormClose } from 'react-icons/gr'
+import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
 
 
 
@@ -83,6 +84,15 @@ function App() {
       behavior: 'smooth'
     })
   }
+
+  function viewresume() {
+    window.open(
+      'https://drive.google.com/file/d/1bDEYr-4BagnZkcrQwfyofNmSb-T19SZH/view?usp=sharing',
+      '_blank'
+    )
+  }
+
+
   return (
     <div className="app">
 
@@ -133,6 +143,7 @@ function App() {
                   transition={{ type: 'spring', duration: .7, delay: .3 }}><span className='num'>05.</span>contact</motion.li>
                 <div className="btn">
                   <motion.button
+                    onClick={viewresume}
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ type: 'spring', duration: .7, delay: .4 }}>Resume</motion.button>
@@ -183,6 +194,7 @@ function App() {
                 <li>
                   <div className="btn">
                     <motion.button
+                      onClick={viewresume}
                       onTap={close}
                       initial={{ y: -50, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
@@ -203,7 +215,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </div >
       <div ref={home}>
         <Landing />
       </div>
@@ -220,7 +232,8 @@ function App() {
         <Contact />
       </div>
 
-    </div>
+
+    </div >
   );
 }
 
