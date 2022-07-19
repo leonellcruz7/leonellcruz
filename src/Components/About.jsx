@@ -16,7 +16,7 @@ export default function About() {
 
     function enter(e) {
         animation2.start({
-            x: 0, opacity: 1
+            y: 0, opacity: 1
         })
     }
     return (
@@ -73,7 +73,7 @@ export default function About() {
                     <div className="col3">
                         <motion.div className="content"
                             whileInView={enter}
-                            initial={{ x: 100, opacity: 0 }}
+                            initial={{ y: 100, opacity: 0 }}
                             animate={animation2}
                             transition={{ type: 'spring', duration: 1.5, bounce: .3 }}>
                             <div className="image">
