@@ -143,7 +143,7 @@ function App() {
               initial={{ x: 530 }}
               variants={menuVariant}
               animate={status}
-              transition={{ type: 'spring', duration: .3 }}>
+              transition={{ type: 'spring', duration: .6 }}>
               <ul>
                 <motion.li
                   onMouseEnter={() => setDotEffect('home')}
@@ -187,9 +187,10 @@ function App() {
             </motion.div>
             <div className="menu">
               {toggle ?
-                <RiMenu5Fill className='open' onClick={open} />
-                :
                 <GrFormClose className='close' onClick={close} />
+                :
+
+                <RiMenu5Fill className='open' onClick={open} />
               }
 
 
