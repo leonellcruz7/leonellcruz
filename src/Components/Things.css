@@ -326,6 +326,10 @@
 
     }
 
+    .things .secondrow {
+        flex-direction: column;
+    }
+
 }
 
 
@@ -352,7 +356,5 @@
         align-items: end;
     }
 
-    .things .secondrow {
-        flex-direction: column;
-    }
+
 }
