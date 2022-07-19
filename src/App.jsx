@@ -10,6 +10,7 @@ import Contact from './Components/Contact';
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { RiMenu5Fill } from 'react-icons/ri'
+import { GrFormClose } from 'react-icons/gr'
 
 
 
@@ -23,6 +24,32 @@ function App() {
   const work = useRef(null)
   const things = useRef(null)
   const contact = useRef(null)
+  const [toggle, setToggle] = useState(false)
+  const [status, setStatus] = useState('close')
+
+  function open(e) {
+    e.preventDefault()
+    setToggle(!toggle)
+    setStatus('open')
+
+
+  }
+
+  function close(e) {
+    e.preventDefault()
+
+    setToggle(!toggle)
+    setStatus('close')
+  }
+
+  const menuVariant = {
+    'open': {
+      x: 15
+    },
+    'close': {
+      x: 530
+    }
+  }
 
   const [dotEffect, setDotEffect] = useState('')
 
@@ -112,8 +139,60 @@ function App() {
                 </div>
               </ul>
             </div>
+            <motion.div className="col6 mobilelist list"
+              initial={{ x: 530 }}
+              variants={menuVariant}
+              animate={status}
+              transition={{ type: 'spring', duration: .3 }}>
+              <ul>
+                <motion.li
+                  onMouseEnter={() => setDotEffect('home')}
+                  onClick={() => scroll(home)}
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ type: 'spring', duration: .7 }}><span className='num'>01.</span>home</motion.li>
+                <motion.li
+                  onMouseEnter={() => setDotEffect('about')}
+                  onClick={() => scroll(about)}
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ type: 'spring', duration: .7 }}><span className='num'>02.</span>about</motion.li>
+                <motion.li
+                  onMouseEnter={() => setDotEffect('work')}
+                  onClick={() => scroll(work)}
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ type: 'spring', duration: .7, delay: .1 }}><span className='num'>03.</span>work</motion.li>
+                <motion.li
+                  onMouseEnter={() => setDotEffect('things')}
+                  onClick={() => scroll(things)}
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ type: 'spring', duration: .7, delay: .2 }}><span className='num'>04.</span>things</motion.li>
+                <motion.li
+                  onMouseEnter={() => setDotEffect('contact')}
+                  onClick={() => scroll(contact)}
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ type: 'spring', duration: .7, delay: .3 }}><span className='num'>05.</span>contact</motion.li>
+                <li>
+                  <div className="btn">
+                    <motion.button
+                      initial={{ y: -50, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ type: 'spring', duration: .7, delay: .4 }}>Resume</motion.button>
+                  </div>
+                </li>
+              </ul>
+            </motion.div>
             <div className="menu">
-              <RiMenu5Fill className='menuicon' />
+              {toggle ?
+                <RiMenu5Fill className='open' onClick={open} />
+                :
+                <GrFormClose className='close' onClick={close} />
+              }
+
+
             </div>
           </div>
         </div>
