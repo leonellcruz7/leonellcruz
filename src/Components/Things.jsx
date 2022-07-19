@@ -96,7 +96,7 @@ export default function Things() {
 
     return (
         <div className="things">
-            <div className="smCon">
+            <div className="mdCon">
                 <motion.div className="row"
                     whileInView={first}
                     initial={{ y: 100, opacity: 0 }}
@@ -112,11 +112,12 @@ export default function Things() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="row"
+                <motion.div className="row project"
                     whileInView={second}
                     initial={{ y: 100, opacity: 0 }}
                     animate={two}
                     transition={{ type: 'spring', duration: 1.5, bounce: .3 }}>
+
                     <motion.div className="col2 image"
                         onClick={redirect}
                         onMouseEnter={e => setHover(true)}
@@ -159,15 +160,28 @@ export default function Things() {
                                 <li>Vs Code</li>
                                 <li>Framer-Motion</li>
                             </ul>
-                            <div className="icons">
-                                <FiGithub className='git' />
-                                <BiLinkExternal className='git' />
+                            <div className="mobiletools">
+                                <ul className='mtools'>
+                                    <li>Vs Code</li>
+                                    <li>Framer-Motion</li>
+                                    <li>Postman</li>
+                                </ul>
+                                <ul className='mtools'>
+                                    <li>ReactJS</li>
+                                    <li>NodeJS</li>
+                                    <li>Express</li>
+                                    <li>MongoDB</li>
+
+                                </ul>
+
                             </div>
+
 
                         </div>
                     </div>
+
                 </motion.div>
-                <motion.div className="row secondrow"
+                <motion.div className="row secondrow project"
                     whileInView={third}
                     initial={{ y: 100, opacity: 0 }}
                     animate={three}
@@ -186,9 +200,20 @@ export default function Things() {
                                 <li>MongoDB</li>
                                 <li>Postman</li>
                             </ul>
-                            <div className="icons">
-                                <FiGithub className='git' />
-                                <BiLinkExternal className='git' />
+                            <div className="mobiletools">
+
+                                <ul className='mtools2'>
+                                    <li>MongoDB</li>
+                                    <li>Postman</li>
+
+                                </ul>
+                                <ul className='mtools2'>
+                                    <li>ReactJS</li>
+                                    <li>NodeJS</li>
+                                    <li>Express</li>
+
+                                </ul>
+
                             </div>
                         </div>
                     </div>

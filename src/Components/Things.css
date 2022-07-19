@@ -3,10 +3,13 @@
 
 }
 
-.things .smCon {
-    width: 100px;
+.things .mdCon {
+    width: 50%;
+
 
 }
+
+
 
 .things .col1 {
     flex-basis: 100%;
@@ -242,8 +245,114 @@
     margin: 40px 0;
 }
 
-@media only screen and (max-width:1630px) {
-    .things .smCon {
-        width: 60%;
+.things .mtools {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0 20px;
+    font-size: 13px;
+}
+
+.things .mtools li {
+    color: rgb(108, 120, 139);
+}
+
+.things .mtools2 li {
+    color: rgb(108, 120, 139);
+}
+
+.things .mtools2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0 20px;
+    font-size: 13px;
+    color: rgb(108, 120, 139);
+}
+
+
+.things .mobiletools {
+    display: none;
+
+}
+
+@media only screen and (max-width:1900px) {
+    .things .mdCon {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .things .mdCon {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .things .mdCon {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:1030px) {
+    .things .mdCon {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:880px) {
+    .things .mdCon {
+        width: 90%;
+    }
+
+    .things .project {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .things .information {
+        background-color: transparent;
+        margin: 20px 0;
+        transform: translateX(0px);
+        padding: 40px 0;
+
+    }
+
+    .things .information2 {
+        background-color: transparent;
+        margin: 20px 0;
+        transform: translateX(0px);
+        padding: 40px 0;
+
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:410px) {
+    .things .information .tools {
+        display: none;
+    }
+
+
+    .things .information2 .tools2 {
+        display: none;
+    }
+
+    .things .mobiletools {
+        display: flex;
+
+    }
+
+    .things .information2 .content {
+        align-items: end;
+    }
+
+    .things .secondrow {
+        flex-direction: column;
     }
 }
