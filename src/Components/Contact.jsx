@@ -3,8 +3,18 @@ import './Contact.css'
 import { HiOutlineMail } from 'react-icons/hi'
 import { FaUser } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import Swal from 'sweetalert2'
 
 export default function Contact() {
+
+    function send(e) {
+        e.preventDefault()
+        Swal.fire({
+            icon: 'success',
+            title: 'Email Sent!',
+            text: 'Thank You for Reaching Out',
+        })
+    }
     return (
         <div className="contact">
             <div className="smCon">
@@ -38,7 +48,7 @@ export default function Contact() {
                                 <textarea name="" id="" cols="30" rows='10'></textarea>
                             </div>
                             <div className="btn">
-                                <button>Send</button>
+                                <button onClick={send}>Send</button>
                             </div>
 
                         </div>
