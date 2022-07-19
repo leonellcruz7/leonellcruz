@@ -87,7 +87,7 @@ function App() {
 
   function viewresume() {
     window.open(
-      'https://drive.google.com/file/d/1bDEYr-4BagnZkcrQwfyofNmSb-T19SZH/view?usp=sharing',
+      'https://drive.google.com/file/d/1sELh7ASCMSqe2h7eLVaciS-fiXKUuXRU/view?usp=sharing',
       '_blank'
     )
   }
