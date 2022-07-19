@@ -147,30 +147,35 @@ function App() {
               <ul>
                 <motion.li
                   onMouseEnter={() => setDotEffect('home')}
+                  onTap={close}
                   onClick={() => scroll(home)}
                   initial={{ y: -50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ type: 'spring', duration: .7 }}><span className='num'>01.</span>home</motion.li>
                 <motion.li
                   onMouseEnter={() => setDotEffect('about')}
+                  onTap={close}
                   onClick={() => scroll(about)}
                   initial={{ y: -50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ type: 'spring', duration: .7 }}><span className='num'>02.</span>about</motion.li>
                 <motion.li
                   onMouseEnter={() => setDotEffect('work')}
+                  onTap={close}
                   onClick={() => scroll(work)}
                   initial={{ y: -50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ type: 'spring', duration: .7, delay: .1 }}><span className='num'>03.</span>work</motion.li>
                 <motion.li
                   onMouseEnter={() => setDotEffect('things')}
+                  onTap={close}
                   onClick={() => scroll(things)}
                   initial={{ y: -50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ type: 'spring', duration: .7, delay: .2 }}><span className='num'>04.</span>things</motion.li>
                 <motion.li
                   onMouseEnter={() => setDotEffect('contact')}
+                  onTap={close}
                   onClick={() => scroll(contact)}
                   initial={{ y: -50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
@@ -178,6 +183,7 @@ function App() {
                 <li>
                   <div className="btn">
                     <motion.button
+                      onTap={close}
                       initial={{ y: -50, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ type: 'spring', duration: .7, delay: .4 }}>Resume</motion.button>
