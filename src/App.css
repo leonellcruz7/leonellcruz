@@ -223,4 +223,12 @@ img {
   .navbar .menu {
     display: flex;
   }
+
+
+}
+
+@media only screen and (max-width:520px) {
+  .navbar .mdCon {
+    width: 95%;
+  }
 }
