@@ -1,9 +1,7 @@
 import { motion, useAnimation } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
 import './Things.css'
-import { FiGithub } from 'react-icons/fi'
-import { BiLinkExternal } from 'react-icons/bi'
-import { Link } from 'react-router-dom'
+
 
 
 

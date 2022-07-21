@@ -11,7 +11,6 @@ import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { RiMenu5Fill } from 'react-icons/ri'
 import { GrFormClose } from 'react-icons/gr'
-import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
 
 
 

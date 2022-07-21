@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './About.css'
 import { motion, useAnimation } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
