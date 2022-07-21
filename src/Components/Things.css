@@ -276,6 +276,49 @@
 
 }
 
+.things .other {
+    margin: 70px 0;
+}
+
+.things .othertitle {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.things .othertitle .divider {
+    flex-basis: 75%;
+    margin-left: 30px;
+}
+
+.things .othercontent {
+    justify-content: center;
+}
+
+.things .othercontent .card {
+    background-color: rgb(50, 55, 59);
+    position: relative;
+    z-index: 1;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.things .othercontent .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 112px 10px rgba(249, 255, 0, 0.2);
+}
+
+.things .othercontent .otherimg {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+.things .othercontent .todoapp {
+    position: absolute;
+}
+
+
+
 @media only screen and (max-width:1900px) {
     .things .mdCon {
         width: 70%;
@@ -292,17 +335,30 @@
     .things .mdCon {
         width: 90%;
     }
+
+    .things .othercontent .col4 {
+        flex-basis: 33%;
+    }
 }
 
 @media only screen and (max-width:1030px) {
     .things .mdCon {
         width: 95%;
     }
+
+    .things .othercontent .todoapp {
+        position: absolute;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width:880px) {
     .things .mdCon {
         width: 90%;
+    }
+
+    .things .othercontent .col4 {
+        flex-basis: 50%;
     }
 
     .things .project {
@@ -330,6 +386,15 @@
         flex-direction: column;
     }
 
+    .things .othertitle h2 {
+        font-size: 20px;
+    }
+
+    .things .othertitle .divider {
+        flex-basis: 55%;
+        margin-left: 15px;
+    }
+
 }
 
 
@@ -338,6 +403,11 @@
 
 
 @media only screen and (max-width:410px) {
+    .things .othertitle .divider {
+        flex-basis: 40%;
+        margin-left: 15px;
+    }
+
     .things .information .tools {
         display: none;
     }
@@ -354,6 +424,10 @@
 
     .things .information2 .content {
         align-items: end;
+    }
+
+    .things .othercontent .col4 {
+        flex-basis: 90%;
     }
 
 

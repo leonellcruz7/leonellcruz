@@ -93,6 +93,23 @@ export default function Things() {
 
     }
 
+    function redirectTodo() {
+        window.open(
+            'https://todo-app-three-tau.vercel.app/', '_blank'
+        )
+    }
+
+    const [todoAnimation, setTodoAnimation] = useState('down')
+
+    const titleVariant = {
+        'up': {
+            y: -60
+        },
+        'down': {
+            y: 0
+        }
+    }
+
 
     return (
         <div className="things">
@@ -243,6 +260,32 @@ export default function Things() {
                     </motion.div>
 
                 </motion.div>
+
+                <div className="row other">
+                    <div className="col1">
+                        <div className="content">
+                            <div className="othertitle">
+                                <h2>Other Projects</h2>
+                                <div className="divider"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row othercontent">
+                    <div className="col4">
+                        <motion.div className="content"
+                            onMouseEnter={() => setTodoAnimation('up')}
+                            onMouseLeave={() => setTodoAnimation('down')}>
+                            <motion.h2 className='todoapp'
+                                variants={titleVariant}
+                                initial={{ y: 0 }}
+                                animate={todoAnimation}>Todo App</motion.h2>
+                            <div className="card" onClick={redirectTodo}>
+                                <img src={require('../img/todo.png')} className='otherimg' />
+                            </div>
+                        </motion.div>
+                    </div>
+                </div>
 
             </div>
         </div >
