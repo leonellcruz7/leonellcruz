@@ -26,10 +26,7 @@ export default function Work() {
         e.preventDefault()
         setNum('three')
     }
-    function four(e) {
-        e.preventDefault()
-        setNum('four')
-    }
+
 
     const scrollVariant = {
         one: {
