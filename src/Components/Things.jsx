@@ -97,9 +97,26 @@ export default function Things() {
         )
     }
 
+    function redirectCalcu() {
+        window.open(
+            'https://leonell-calculator.netlify.app/', '_blank'
+        )
+    }
+
     const [todoAnimation, setTodoAnimation] = useState('down')
 
-    const titleVariant = {
+    const todoVariant = {
+        'up': {
+            y: -60
+        },
+        'down': {
+            y: 0
+        }
+    }
+
+    const [calcuAnimation, setCalcuAnimation] = useState('down')
+
+    const calcuVariant = {
         'up': {
             y: -60
         },
@@ -274,12 +291,24 @@ export default function Things() {
                         <motion.div className="content"
                             onMouseEnter={() => setTodoAnimation('up')}
                             onMouseLeave={() => setTodoAnimation('down')}>
-                            <motion.h2 className='todoapp'
-                                variants={titleVariant}
-                                initial={{ y: 0 }}
-                                animate={todoAnimation}>Todo App</motion.h2>
+
                             <div className="card" onClick={redirectTodo}>
-                                <img src={require('../img/todo.png')} className='otherimg' />
+                                <div className="imgcon">
+                                    <img src={require('../img/todo.png')} className='otherimg' />
+                                </div>
+
+                            </div>
+                        </motion.div>
+                    </div>
+                    <div className="col4">
+                        <motion.div className="content"
+                            onMouseEnter={() => setCalcuAnimation('up')}
+                            onMouseLeave={() => setCalcuAnimation('down')}>
+
+                            <div className="card" onClick={redirectCalcu}>
+                                <div className="imgcon">
+                                    <img src={require('../img/calcu.png')} className='otherimg' />
+                                </div>
                             </div>
                         </motion.div>
                     </div>

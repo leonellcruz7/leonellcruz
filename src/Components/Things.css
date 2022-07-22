@@ -301,6 +301,12 @@
     z-index: 1;
     transition: .3s ease;
     cursor: pointer;
+    margin: 10px;
+}
+
+.things .othercontent .card .imgcon {
+    max-height: 300px;
+    overflow: hidden;
 }
 
 .things .othercontent .card:hover {
@@ -323,6 +329,25 @@
     .things .mdCon {
         width: 70%;
     }
+
+    .things .othercontent .card .imgcon {
+        max-height: 270px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width:1700px) {
+    .things .othercontent .card .imgcon {
+        max-height: 240px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width:1500px) {
+    .things .othercontent .card .imgcon {
+        max-height: 220px;
+        overflow: hidden;
+    }
 }
 
 @media only screen and (max-width:1400px) {
@@ -336,6 +361,11 @@
         width: 90%;
     }
 
+    .things .othercontent .card .imgcon {
+        max-height: 260px;
+        overflow: hidden;
+    }
+
     .things .othercontent .col4 {
         flex-basis: 33%;
     }
@@ -344,6 +374,11 @@
 @media only screen and (max-width:1030px) {
     .things .mdCon {
         width: 95%;
+    }
+
+    .things .othercontent .card .imgcon {
+        max-height: 300px;
+        overflow: hidden;
     }
 
     .things .othercontent .todoapp {
@@ -355,6 +390,11 @@
 @media only screen and (max-width:880px) {
     .things .mdCon {
         width: 90%;
+    }
+
+    .things .othercontent .card .imgcon {
+        max-height: 180px;
+        overflow: hidden;
     }
 
     .things .othercontent .col4 {
@@ -406,6 +446,11 @@
     .things .othertitle .divider {
         flex-basis: 40%;
         margin-left: 15px;
+    }
+
+    .things .othercontent .card .imgcon {
+        max-height: 250px;
+        overflow: hidden;
     }
 
     .things .information .tools {
