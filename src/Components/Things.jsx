@@ -294,7 +294,7 @@ export default function Things() {
 
                             <div className="card" onClick={redirectTodo}>
                                 <div className="imgcon">
-                                    <img src={require('../img/todo.png')} className='otherimg' />
+                                    <img src={require('../img/todo.jpg')} className='otherimg' />
                                 </div>
 
                             </div>
@@ -307,7 +307,7 @@ export default function Things() {
 
                             <div className="card" onClick={redirectCalcu}>
                                 <div className="imgcon">
-                                    <img src={require('../img/calcu.png')} className='otherimg' />
+                                    <img src={require('../img/calcu.jpg')} className='otherimg' />
                                 </div>
                             </div>
                         </motion.div>
