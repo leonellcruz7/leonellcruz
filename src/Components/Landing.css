@@ -18,7 +18,7 @@
 }
 
 .landing .hi {
-    color: #109473;
+    color: var(--light);
     padding: 10px 0;
     font-family: 'PT Mono', monospace;
     font-size: 13px;
@@ -26,11 +26,11 @@
 }
 
 .landing .sub {
-    color: rgb(108, 120, 139);
+    color: var(--sub);
 }
 
 .landing .text p {
-    color: rgb(108, 120, 139);
+    color: var(--light);
 }
 
 .landing .head {
@@ -38,12 +38,12 @@
 }
 
 .landing .head .name {
-    color: #2d3747;
+    color: var(--primary);
 }
 
 .landing button {
     margin: 20px 0;
-    color: #109473;
+    color: var(--dark);
 }
 
 @media only screen and (max-width:1400px) {

@@ -21,7 +21,7 @@ export default function Contact() {
                 <div className="row">
                     <div className="col2">
                         <div className="content">
-                            <h4>Contact</h4>
+                            <h4>Contact Me</h4>
                             <h2>Need Something?</h2>
                             <p className='text'>Use the form to send me your request or you can email me directly at the email address provided below.</p>
                             <div className='mail'>

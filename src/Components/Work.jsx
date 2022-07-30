@@ -83,7 +83,7 @@ export default function Work() {
                     <div className="col1">
                         <div className="content">
                             <div className="head">
-                                <p className=' text1'>02.</p>
+                                <p className='num1'>02.</p>
                                 <h2>Background</h2>
                                 <div className="divider"></div>
                             </div>
@@ -122,7 +122,7 @@ export default function Work() {
                                             <h3>Special Education Teacher @ Tots @ Work DCFYL, Inc.</h3>
                                             <p>June 2016 - March 2021</p>
                                             <ul>
-                                                <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" /><p>Create Individualized Program suitable for the specific needs of a particular child.</p></li>
+                                                <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" /><p className='puita'>Create Individualized Program suitable for the specific needs of a particular child.</p></li>
                                                 <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" /><p>Collaborate with other teachers, therapists and parents on how to implement the designed program.</p></li>
                                                 <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" /><p>Create activities and visual aids to be used for daily lesson.</p></li>
                                             </ul>

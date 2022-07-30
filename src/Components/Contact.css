@@ -1,6 +1,17 @@
 .contact {
     padding: 20px 0;
-    background-color: aliceblue;
+}
+
+.contact h4 {
+    color: var(--sub);
+}
+
+.contact h2 {
+    color: var(--primary);
+}
+
+.contact p {
+    color: var(--light);
 }
 
 .contact .divider {
@@ -59,6 +70,7 @@
     position: absolute;
     transform: translateY(9px) translateX(5px);
     font-size: 15px;
+    color: var(--sub) !important;
 }
 
 .contact .nIcon {
@@ -67,6 +79,14 @@
 
 .contact .eIcon {
     font-size: 17px;
+}
+
+.contact input,
+.contact textarea {
+    background: rgb(184, 184, 184);
+    background: linear-gradient(337deg, rgba(184, 184, 184, 1) 0%, rgba(149, 149, 149, 1) 100%);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4);
+    color: var(--dark);
 }
 
 @media only screen and (max-width:1530px) {

@@ -11,7 +11,7 @@
 }
 
 .about .head p {
-    color: #109473;
+    color: var(--light);
 }
 
 .about .head {
@@ -23,7 +23,7 @@
 
 .about .head h2 {
     padding: 0 20px;
-    color: #2d3747;
+    color: var(--primary);
 }
 
 .about .head .divider {
@@ -32,7 +32,7 @@
 }
 
 .about .detail p {
-    color: rgb(108, 120, 139);
+    color: var(--light);
     font-size: 13px;
     padding: 0 20px;
     line-height: 25px;
@@ -50,7 +50,7 @@
 
 .about .box {
     padding: 100px 20px;
-    border: 2px solid #109473;
+    border: 2px solid var(--primary);
     min-width: 250px;
     max-width: 250px;
     min-height: 250px;
@@ -70,11 +70,12 @@
 }
 
 .about .tools .title {
-    color: #109473;
+    color: var(--secondary);
+    font-weight: 700;
 }
 
 .about .tools li {
-    color: rgb(108, 120, 139);
+    color: var(--light);
     font-size: 13px;
     display: flex;
     align-items: center;
@@ -83,7 +84,7 @@
 .about .tools li .arr {
     margin: 0 10px;
     font-size: 7px;
-    color: #109473;
+    color: var(--light);
 }
 
 .about .tools {

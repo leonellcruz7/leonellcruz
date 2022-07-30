@@ -26,12 +26,16 @@
 }
 
 .work .content .head p {
-    color: #109473;
+    color: var(--sub);
+}
+
+.work .num1 {
+    color: var(--secondary) !important;
 }
 
 .work .content .head h2 {
     margin: 0 20px;
-    color: #2d3747;
+    color: var(--primary);
 }
 
 .work .info {
@@ -49,6 +53,7 @@
     z-index: 1;
     cursor: pointer;
     font-size: 14px;
+    color: var(--light);
 
 
 }
@@ -74,6 +79,10 @@
     margin-bottom: 115px;
 }
 
+.work .worklist ul li p {
+    color: var(--light) !important;
+}
+
 
 
 
@@ -82,7 +91,7 @@
 
 .work .scroll {
 
-    background-color: #2d3747;
+    background-color: var(--secondary);
     width: 1px;
     height: 140px;
     display: flex;
@@ -105,7 +114,7 @@
 }
 
 .work .scroll .one {
-    background-color: #109473;
+    background-color: var(--primary);
     height: 35px;
     width: 5px;
     border: none;
@@ -119,7 +128,7 @@
     min-width: 150px;
     height: 35px;
     position: absolute;
-    background-color: rgb(180, 196, 211);
+    background-color: var(--sub);
     z-index: 0;
 }
 
@@ -130,11 +139,11 @@
 
 
 .work .text h3 {
-    color: #2d3747;
+    color: var(--primary);
 }
 
 .work .text p {
-    color: #2d3747;
+    color: var(--sub);
 }
 
 .work .text ul {
@@ -147,11 +156,12 @@
     display: flex;
     align-items: start;
 
+
 }
 
 .work .text ul li p {
     margin: 0 20px;
-    color: rgb(108, 120, 139);
+    color: var(--sub);
     font-size: 13px;
 }
 

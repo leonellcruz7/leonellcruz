@@ -58,7 +58,7 @@ export default function Things() {
     useEffect(() => {
         if (hover2) {
             animation2.start({
-                scale: 1.2, x: -80, y: 40, zIndex: 1
+                scale: 1.2, x: 80, y: 40, zIndex: 1
             })
             content2.start({
                 y: -100
@@ -170,7 +170,7 @@ export default function Things() {
                                 transition={{ duration: .3, bounce: .3 }}>Fullstack Ecommerce Website</motion.p>
                             <motion.img src={require('../img/mock.png')} alt=""
                                 animate={content}
-                                initial={{ y: 0 }}
+                                initial={{ y: 0, opacity: .7 }}
                                 transition={{ duration: .3, bounce: .3 }} />
                         </div>
                     </motion.div>
@@ -269,7 +269,7 @@ export default function Things() {
                                 transition={{ duration: .3, bounce: .3 }}>Course Booking Website</motion.p>
                             <motion.img src={require('../img/zuitt.png')} alt=""
                                 animate={content2}
-                                initial={{ y: 0 }}
+                                initial={{ y: 0, opacity: .7 }}
                                 transition={{ duration: .3, bounce: .3 }} />
                         </div>
                     </motion.div>
