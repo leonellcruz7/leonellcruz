@@ -205,6 +205,10 @@
         align-items: start;
 
     }
+
+    .work .w1 {
+        transform: translateY(10px);
+    }
 }
 
 @media only screen and (max-width:680px) {
