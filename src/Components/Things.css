@@ -136,6 +136,10 @@
     align-items: end;
 }
 
+.things .numsection {
+    color: var(--light);
+}
+
 .things .information .box {
     padding: 20px;
     background: rgb(102, 142, 80);

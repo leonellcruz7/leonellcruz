@@ -39,6 +39,7 @@
 .contact .mail .maillogo {
     font-size: 25px;
     margin: 20px 10px;
+    color: var(--secondary);
 }
 
 .contact .content h2 {
@@ -70,7 +71,7 @@
     position: absolute;
     transform: translateY(9px) translateX(5px);
     font-size: 15px;
-    color: var(--sub) !important;
+    color: var(--sub);
 }
 
 .contact .nIcon {

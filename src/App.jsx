@@ -11,6 +11,8 @@ import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { RiMenu5Fill } from 'react-icons/ri'
 import { GrFormClose } from 'react-icons/gr'
+import { FiFacebook, FiInstagram, FiLinkedin, FiGithub } from 'react-icons/fi'
+
 
 
 
@@ -91,6 +93,48 @@ function App() {
     )
   }
 
+  const [namePosition, setNamePosition] = useState('hide')
+  const nameVar = {
+    'show': {
+      x: 0
+    },
+    'hide': {
+      x: -230
+    }
+  }
+  const showName = (e) => {
+    e.preventDefault()
+    if (namePosition == 'hide') {
+      setNamePosition('show')
+    }
+    else {
+      setNamePosition('hide')
+    }
+  }
+
+  const fb = () => {
+    window.open(
+      'https://www.facebook.com/leonell.b.cruz/', '_blank'
+    )
+  }
+
+  const ig = () => {
+    window.open(
+      'https://www.instagram.com/leonell.b.cruz/', '_blank'
+    )
+  }
+  const li = () => {
+    window.open(
+      'https://www.linkedin.com/in/leonellcruz/', '_blank'
+    )
+  }
+  const gh = () => {
+    window.open(
+      'https://github.com/leonellcruz7', '_blank'
+    )
+  }
+
+
 
   return (
     <div className="app">
@@ -99,10 +143,20 @@ function App() {
         <div className="mdCon">
           <div className="row">
             <motion.div className="col6 logo"
+
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: .7 }}>
-              <img src={require('./img/leologo.png')} />
+              <motion.img src={require('./img/leologo.png')}
+                onClick={showName}
+              />
+              <div className="hiddenname">
+                <motion.h1
+                  initial={{ x: -230 }}
+                  variants={nameVar}
+                  animate={namePosition}
+                  transition={{ type: 'spring', duration: .5, bounce: .1 }}>DevLeo</motion.h1>
+              </div>
             </motion.div>
             <div className="col6 desktoplist list">
               <ul>
@@ -148,6 +202,13 @@ function App() {
                     transition={{ type: 'spring', duration: .7, delay: .4 }}>Resume</motion.button>
                 </div>
               </ul>
+              <div className="socials">
+                <FiFacebook onClick={fb} className='icon' />
+                <FiInstagram onClick={ig} className='icon' />
+                <FiLinkedin onClick={li} className='icon' />
+                <FiGithub onClick={gh} className='icon' />
+                <div className="divider"></div>
+              </div>
             </div>
             <motion.div className="col6 mobilelist list"
               initial={{ x: 530 }}

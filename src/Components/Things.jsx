@@ -137,7 +137,7 @@ export default function Things() {
                     <div className="col1">
                         <div className="content">
                             <div className="head">
-                                <p>02.</p>
+                                <p className='numsection'>03.</p>
                                 <h2>My Works</h2>
                                 <div className="divider"></div>
                             </div>

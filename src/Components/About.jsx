@@ -30,7 +30,7 @@ export default function About() {
                             animate={animation}
                             transition={{ type: 'spring', duration: 1.5, bounce: .3 }}>
                             <div className="head">
-                                <p className=' text1'>01.</p>
+                                <p className='numsection'>01.</p>
                                 <h2>About me</h2>
                                 <div className="divider"></div>
                             </div>
