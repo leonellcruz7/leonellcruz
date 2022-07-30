@@ -148,14 +148,14 @@ function App() {
               animate={{ opacity: 1 }}
               transition={{ duration: .7 }}>
               <motion.img src={require('./img/leologo.png')}
-                onClick={showName}
+                onMouseEnter={showName}
               />
               <div className="hiddenname">
-                <motion.h1
-                  initial={{ x: -230 }}
+                <motion.img src={require('./img/dog.png')}
+                  initial={{ x: -230, rotate: 90 }}
                   variants={nameVar}
                   animate={namePosition}
-                  transition={{ type: 'spring', duration: .5, bounce: .1 }}>DevLeo</motion.h1>
+                  transition={{ type: 'spring', duration: .5, bounce: .1 }} />
               </div>
             </motion.div>
             <div className="col6 desktoplist list">
@@ -256,6 +256,7 @@ function App() {
                     <motion.button
                       onClick={viewresume}
                       onTap={close}
+                      whileHover={{ brightness: 2 }}
                       initial={{ y: -50, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ type: 'spring', duration: .7, delay: .4 }}>Resume</motion.button>

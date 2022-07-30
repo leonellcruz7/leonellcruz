@@ -82,6 +82,10 @@
     font-size: 17px;
 }
 
+.contact .btn {
+    width: fit-content;
+}
+
 .contact input,
 .contact textarea {
     background: rgb(184, 184, 184);

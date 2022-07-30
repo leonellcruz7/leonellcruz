@@ -103,28 +103,6 @@ export default function Things() {
         )
     }
 
-    const [todoAnimation, setTodoAnimation] = useState('down')
-
-    const todoVariant = {
-        'up': {
-            y: -60
-        },
-        'down': {
-            y: 0
-        }
-    }
-
-    const [calcuAnimation, setCalcuAnimation] = useState('down')
-
-    const calcuVariant = {
-        'up': {
-            y: -60
-        },
-        'down': {
-            y: 0
-        }
-    }
-
 
     return (
         <div className="things">
@@ -288,29 +266,23 @@ export default function Things() {
                 </div>
                 <div className="row othercontent">
                     <div className="col4">
-                        <motion.div className="content"
-                            onMouseEnter={() => setTodoAnimation('up')}
-                            onMouseLeave={() => setTodoAnimation('down')}>
-
+                        <div className="content">
                             <div className="card" onClick={redirectTodo}>
                                 <div className="imgcon">
                                     <img src={require('../img/todo.jpg')} className='otherimg' />
                                 </div>
 
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
                     <div className="col4">
-                        <motion.div className="content"
-                            onMouseEnter={() => setCalcuAnimation('up')}
-                            onMouseLeave={() => setCalcuAnimation('down')}>
-
+                        <div className="content">
                             <div className="card" onClick={redirectCalcu}>
                                 <div className="imgcon">
                                     <img src={require('../img/calcu.jpg')} className='otherimg' />
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
 
