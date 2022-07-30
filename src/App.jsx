@@ -149,13 +149,14 @@ function App() {
               transition={{ duration: .7 }}>
               <motion.img src={require('./img/leologo.png')}
                 onMouseEnter={showName}
+                onMouseLeave={showName}
               />
               <div className="hiddenname">
                 <motion.img src={require('./img/dog.png')}
                   initial={{ x: -230, rotate: 90 }}
                   variants={nameVar}
                   animate={namePosition}
-                  transition={{ type: 'spring', duration: .5, bounce: .1 }} />
+                  transition={{ type: 'spring', duration: .2, bounce: .1 }} />
               </div>
             </motion.div>
             <div className="col6 desktoplist list">
