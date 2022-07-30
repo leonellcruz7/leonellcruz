@@ -237,6 +237,7 @@ img {
 .navbar .open {
   font-size: 30px;
   position: relative;
+  color: var(--primary);
 }
 
 .navbar .close {
@@ -320,6 +321,17 @@ img {
   .navbar .open {
     font-size: 30px;
     position: relative;
+
+  }
+
+  .navbar .hiddenname {
+    overflow: hidden;
+    position: absolute;
+    top: 36px;
+    left: 120px;
+    z-index: 0;
+    transform: rotate(45deg) translateY(57px) translateX(7px);
+
 
   }
 
