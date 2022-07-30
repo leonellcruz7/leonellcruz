@@ -28,7 +28,7 @@ export default function Landing() {
                                 <motion.h1 className='sub'
                                     initial={{ y: 50, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
-                                    transition={{ type: 'spring', duration: 1, delay: .9 }}>full stack web developer</motion.h1>
+                                    transition={{ type: 'spring', duration: 1, delay: .9 }}>{'#'} full stack web developer</motion.h1>
                             </div>
                             <div className="text">
                                 <motion.p
@@ -48,6 +48,6 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

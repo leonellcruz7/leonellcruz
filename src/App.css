@@ -2,7 +2,7 @@
 
 
 :root {
-  --primary: #5BE83A;
+  --primary: #8cfc74;
   --secondary: #4C9E3A;
   --dark: #0B1C1F;
   --light: #cccccc;
@@ -159,6 +159,12 @@ img {
 .navbar .logo img {
   width: 110px;
   padding: 10px 0;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.navbar .logo img:hover {
+  transform: scale(1.1);
 }
 
 .navbar li {

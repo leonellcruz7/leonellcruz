@@ -8,7 +8,7 @@
 }
 
 .landing .col2 {
-    flex-basis: 65%;
+    flex-basis: 80%;
 }
 
 .landing .text {
@@ -25,6 +25,7 @@
 
 }
 
+
 .landing .sub {
     color: var(--sub);
 }
@@ -39,6 +40,7 @@
 
 .landing .head .name {
     color: var(--primary);
+    text-shadow: 0px 0px 12px rgba(140, 252, 116, 0.6);
 }
 
 .landing button {
