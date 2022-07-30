@@ -58,7 +58,7 @@ export default function Things() {
     useEffect(() => {
         if (hover2) {
             animation2.start({
-                scale: 1.2, x: 80, y: 40, zIndex: 1
+                scale: 1.2, x: -80, y: 40, zIndex: 1
             })
             content2.start({
                 y: -100
