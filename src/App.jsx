@@ -153,7 +153,7 @@ function App() {
               initial={{ x: 530 }}
               variants={menuVariant}
               animate={status}
-              transition={{ type: 'spring', duration: .6 }}>
+              transition={{ type: 'spring', duration: .6, bounce: .1 }}>
               <ul>
                 <motion.li
                   onMouseEnter={() => setDotEffect('home')}
