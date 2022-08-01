@@ -64,19 +64,6 @@ button:hover {
 }
 
 
-/* button {
-  border: none;
-  background: rgb(72, 34, 73);
-  background: linear-gradient(309deg, rgba(72, 34, 73, 1) 0%, rgba(93, 163, 77, 1) 0%, rgba(28, 98, 13, 1) 100%);
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: var(--dark);
-  font-weight: 700;
-  cursor: pointer;
-  outline: none;
-} */
-
-
 
 
 img {
@@ -87,14 +74,6 @@ img {
   width: 100%;
 }
 
-/* .btn {
-  transition: .3s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-
-} */
 
 
 .lgCon {
@@ -319,7 +298,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: .5;
   transform: translateY(380px) translateX(70px);
 }
 
@@ -329,10 +307,13 @@ img {
   color: var(--light);
   transition: .2s ease;
   cursor: pointer;
+  opacity: .5;
 }
 
 .navbar .icon:hover {
   transform: scale(1.2);
+  color: var(--primary);
+  opacity: 1;
 }
 
 .navbar .divider {
@@ -340,6 +321,7 @@ img {
   height: 200px;
   background-color: var(--light);
   margin-top: 10px;
+  opacity: .5;
 }
 
 
