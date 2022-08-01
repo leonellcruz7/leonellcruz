@@ -36,13 +36,13 @@ export default function Landing() {
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ type: 'spring', duration: 1, delay: 1 }}>I am a Web Developer & Designer based in the Philippines experienced in building mobile responsive websites mainly focused on using HTML5, CSS3, Bootstrap, ReactJS, NodeJS, Express and other JavaScript Frameworks. </motion.p>
                             </div>
-                            <div className="btn">
-                                <motion.button
-                                    onClick={viewresume}
-                                    initial={{ y: 50, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ type: 'spring', duration: 1, delay: 1.1 }}>Learn More</motion.button>
-                            </div>
+                            <motion.div className="btn"
+                                onClick={viewresume}
+                                initial={{ y: 50, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ type: 'spring', duration: 1, delay: 1.1 }}>
+                                <button>Learn More</button>
+                            </motion.div>
 
                         </div>
                     </div>

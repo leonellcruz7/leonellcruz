@@ -195,13 +195,13 @@ function App() {
                   initial={{ y: -50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ type: 'spring', duration: .7, delay: .3 }}><span className='num'>05.</span>contact</motion.li>
-                <div className="btn">
-                  <motion.button
-                    onClick={viewresume}
-                    initial={{ y: -50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ type: 'spring', duration: .7, delay: .4 }}>Resume</motion.button>
-                </div>
+                <motion.div className="btn"
+                  onClick={viewresume}
+                  initial={{ y: -50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ type: 'spring', duration: .7, delay: .4 }}>
+                  <button>Resume</button>
+                </motion.div>
               </ul>
               <div className="socials">
                 <FiFacebook onClick={fb} className='icon' />
