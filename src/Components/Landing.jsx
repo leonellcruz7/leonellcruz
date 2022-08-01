@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export default function Landing() {
     function viewresume() {
         window.open(
-            'https://drive.google.com/file/d/1sELh7ASCMSqe2h7eLVaciS-fiXKUuXRU/view?usp=sharing',
+            'https://drive.google.com/file/d/1-FnN2GW2kT7yaQUBRZWeUMP_MhNP33fH/view?usp=sharing',
             '_blank'
         )
     }
