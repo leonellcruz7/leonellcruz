@@ -35,7 +35,9 @@ export default function About() {
                                 <div className="divider"></div>
                             </div>
                             <div className="detail">
-                                <p>Hello! My name is Leonell Cruz and I love things that require creativity and logical skills. I previously worked as a Special Education Teacher back in 2016 after  i finished my degree. Ever since, graphic design has always piqued my interest that is why i also worked as a part-time graphic designer. But as time progress I discovered that i have a lot more potential than just design, therefore I decided to level up my game and become a Web Developer. </p>
+                                <p>
+                                Hello! My name is Leonell Cruz and I love things that require creativity and logical skills. I am a passionate web developer and engineer who will formulate the right solutions to move your needle. I make quality-focused web and interactive experiences, branding, apps, and creative solutions that addd value to your organization and reflect your branding's message. Whether you're just getting started with a new idea, or are already well into your journey, I've got the skills, the drive and a team to serve all of your needs. </p>
+
                                 <p className='p2'>Currently I have been designing and developing websites using the following tools:</p>
                                 <div className='tools'>
                                     <div>
@@ -43,8 +45,21 @@ export default function About() {
                                         <ul>
                                             <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />HTML</li>
                                             <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />CSS</li>
-                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Bootstrap</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Javascript</li>
                                             <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />ReactJs</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />React Native</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Jest</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />NextJs</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Vite</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Material UI</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />SASS</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />TailwindCSS</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Bootstrap</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Axios</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Redux Toolkit</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Framer Motion</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Storybook</li>
+
                                         </ul>
                                     </div>
                                     <div>
@@ -54,6 +69,7 @@ export default function About() {
                                             <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />NodeJS</li>
                                             <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />ExpressJS</li>
                                             <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />MongoDB</li>
+                                            <li><FontAwesomeIcon className='arr' icon="fa-solid fa-caret-right" />Firebase</li>
                                         </ul>
                                     </div>
                                     <div>
