@@ -79,7 +79,7 @@ function App() {
 
   function viewresume() {
     window.open(
-      "https://drive.google.com/file/d/1FPYMUwUgb0v2jJD9tOzRpaPRwCsoDZgW/view?usp=share_link",
+      "https://drive.google.com/file/d/1JnwDX0917NXtDR0TA9nCODeOwGC4zKC2/view?usp=sharing",
       "_blank"
     );
   }
