@@ -79,7 +79,7 @@ function App() {
 
   function viewresume() {
     window.open(
-      "https://drive.google.com/file/d/1JnwDX0917NXtDR0TA9nCODeOwGC4zKC2/view?usp=sharing",
+      "https://drive.google.com/file/d/1ItIBVraTPMyBZXFpkF6QN8MmKpDO0oF4/view?usp=sharing",
       "_blank"
     );
   }
@@ -206,22 +206,10 @@ function App() {
                 </motion.div>
               </ul>
               <div className="socials">
-                <FiFacebook
-                  onClick={fb}
-                  className="icon"
-                />
-                <FiInstagram
-                  onClick={ig}
-                  className="icon"
-                />
-                <FiLinkedin
-                  onClick={li}
-                  className="icon"
-                />
-                <FiGithub
-                  onClick={gh}
-                  className="icon"
-                />
+                <FiFacebook onClick={fb} className="icon" />
+                <FiInstagram onClick={ig} className="icon" />
+                <FiLinkedin onClick={li} className="icon" />
+                <FiGithub onClick={gh} className="icon" />
                 <div className="divider"></div>
               </div>
             </div>
@@ -301,15 +289,9 @@ function App() {
             </motion.div>
             <div className="menu">
               {toggle ? (
-                <GrFormClose
-                  className="close"
-                  onClick={close}
-                />
+                <GrFormClose className="close" onClick={close} />
               ) : (
-                <RiMenu5Fill
-                  className="open"
-                  onClick={open}
-                />
+                <RiMenu5Fill className="open" onClick={open} />
               )}
             </div>
           </div>
