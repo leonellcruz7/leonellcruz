@@ -7,13 +7,16 @@ export default function Things() {
   const [hover, setHover] = useState(false);
   const [hover2, setHover2] = useState(false);
   const [hover3, setHover3] = useState(false);
+  const [hover4, setHover4] = useState(false);
   const animation = useAnimation();
   const content = useAnimation();
   const animation2 = useAnimation();
   const animation3 = useAnimation();
+  const animation4 = useAnimation();
 
   const content2 = useAnimation();
   const content3 = useAnimation();
+  const content4 = useAnimation();
 
   const one = useAnimation();
   const two = useAnimation();
@@ -117,6 +120,29 @@ export default function Things() {
       });
     }
   }, [hover3]);
+  useEffect(() => {
+    if (hover4) {
+      animation4.start({
+        scale: 1.2,
+        x: -80,
+        y: 40,
+        zIndex: 1,
+      });
+      content4.start({
+        y: -80,
+      });
+    } else {
+      animation4.start({
+        scale: 1,
+        x: 0,
+        y: 0,
+        zIndex: 0,
+      });
+      content4.start({
+        y: 0,
+      });
+    }
+  }, [hover4]);
 
   function redirect() {
     window.open("https://capstone-3-ecommerce-website.vercel.app/", "_blank");
@@ -127,6 +153,9 @@ export default function Things() {
   }
   function redirect3() {
     window.open("https://www.secuna.io/", "_blank");
+  }
+  function redirect4() {
+    window.open("https://ecommerce-demo-leonell.netlify.app", "_blank");
   }
 
   function redirectTodo() {
@@ -390,6 +419,78 @@ export default function Things() {
             </div>
           </div>
         </motion.div>
+        <motion.div
+          className="row secondrow project"
+          whileInView={third}
+          initial={{ y: 100, opacity: 0 }}
+          animate={three}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+        >
+          <div className="col2 information2">
+            <div className="content">
+              <p>Featured Project</p>
+              <h3>Ecommerce Demo Website</h3>
+              <div className="box2">
+                <p>
+                  Functional Website wherein you can choose and book a web
+                  development course that you prefer to learn. Also built using
+                  ReactJS and other Javascript Tools and Frameworks.
+                </p>
+              </div>
+              <ul className="tools2">
+                <li>ReactJS</li>
+                <li>NodeJS</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Postman</li>
+              </ul>
+              <div className="mobiletools">
+                <ul className="mtools2">
+                  <li>MongoDB</li>
+                  <li>Postman</li>
+                </ul>
+                <ul className="mtools2">
+                  <li>ReactJS</li>
+                  <li>NodeJS</li>
+                  <li>Express</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <motion.div
+            className="col2 image2"
+            onClick={redirect4}
+            onMouseEnter={(e) => setHover4(true)}
+            onMouseLeave={(e) => setHover4(false)}
+            animate={animation4}
+            initial={{ scale: 1, x: 0, y: 0, zIndex: 0 }}
+            transition={{ duration: 0.3, bounce: 0.3 }}
+          >
+            <div className="content flex flex-col items-center">
+              <motion.img
+                className="ecom-demo"
+                src={require("../img/logo-1.png")}
+                animate={content4}
+                initial={{ y: 0 }}
+                transition={{ duration: 0.3, bounce: 0.3 }}
+              />
+              <motion.p
+                animate={content4}
+                initial={{ y: 0 }}
+                transition={{ duration: 0.3, bounce: 0.3 }}
+              >
+                Ecommerce Demo Website
+              </motion.p>
+              <motion.img
+                src={require("../img/ecom-demo.png")}
+                alt=""
+                animate={content4}
+                initial={{ y: 0, opacity: 0.7 }}
+                transition={{ duration: 0.3, bounce: 0.3 }}
+              />
+            </div>
+          </motion.div>
+        </motion.div>
 
         <div className="row other">
           <div className="col1">
@@ -404,30 +505,18 @@ export default function Things() {
         <div className="row othercontent">
           <div className="col4">
             <div className="content">
-              <div
-                className="card"
-                onClick={redirectTodo}
-              >
+              <div className="card" onClick={redirectTodo}>
                 <div className="imgcon">
-                  <img
-                    src={require("../img/todo.jpg")}
-                    className="otherimg"
-                  />
+                  <img src={require("../img/todo.jpg")} className="otherimg" />
                 </div>
               </div>
             </div>
           </div>
           <div className="col4">
             <div className="content">
-              <div
-                className="card"
-                onClick={redirectCalcu}
-              >
+              <div className="card" onClick={redirectCalcu}>
                 <div className="imgcon">
-                  <img
-                    src={require("../img/calcu.jpg")}
-                    className="otherimg"
-                  />
+                  <img src={require("../img/calcu.jpg")} className="otherimg" />
                 </div>
               </div>
             </div>
