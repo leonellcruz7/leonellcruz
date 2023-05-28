@@ -429,20 +429,23 @@ export default function Things() {
           <div className="col2 information2">
             <div className="content">
               <p>Featured Project</p>
-              <h3>Ecommerce Demo Website</h3>
+              <h3>Ecommerce Amazon Affiliate</h3>
               <div className="box2">
                 <p>
-                  Functional Website wherein you can choose and book a web
-                  development course that you prefer to learn. Also built using
-                  ReactJS and other Javascript Tools and Frameworks.
+                  Ecommerce website which I will be using in selling affiliate
+                  products from amazon. I am building this using Next Js and
+                  Node JS which will be deployed in AWS using EC2 Instance.
                 </p>
               </div>
               <ul className="tools2">
-                <li>ReactJS</li>
+                <li>NextJs</li>
                 <li>NodeJS</li>
                 <li>Express</li>
                 <li>MongoDB</li>
                 <li>Postman</li>
+              </ul>{" "}
+              <ul className="tools2">
+                <li>AWS</li>
               </ul>
               <div className="mobiletools">
                 <ul className="mtools2">
@@ -479,7 +482,7 @@ export default function Things() {
                 initial={{ y: 0 }}
                 transition={{ duration: 0.3, bounce: 0.3 }}
               >
-                Ecommerce Demo Website
+                Ecommerce Amazon Affiliate Website
               </motion.p>
               <motion.img
                 src={require("../img/ecom-demo.png")}
